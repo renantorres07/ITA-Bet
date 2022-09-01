@@ -25,7 +25,6 @@ function App() {
       <h1 className='header'><FiDollarSign size={25} color="#fff" />ITA Bet</h1>
       <div className='container'>
         <h4 className='title'>Escolha a partida: </h4>
-        
       </div>
     </div>
   );
