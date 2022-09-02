@@ -27,12 +27,12 @@ function App() {
   async function handleSearch() {
 
     if (input === '') {
-      alert("Preencha alguma rodada!!")
+      alert("Preencha alguma fase!!")
       return;
     }
 
     try {
-      const response = await api.get(`${input}`);
+      const response = await api.get(`fases/${input}`);
       setRodada(response.data)
       setInput("")
 
