@@ -32,7 +32,7 @@ function App() {
     }
 
     try {
-      const response = await api.get(`fases/${input}`);
+      const response = await api.get(`campeonatos/10/fases/${input}`);
       setRodada(response.data)
       setInput("")
 
