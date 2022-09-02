@@ -8,24 +8,29 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
   background: linear-gradient(#121212, #21661b);
 }
 
 .title {
-  font-size: 45px;
+  font-size: 5px;
   color: #fff;
   animation: flipTitle 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  margin: 0;
+  padding: 10px;
 }
 
 @keyframes flipTitle {
   from {
-      transform: rotateX(90deg);
+    transform: rotateX(90deg);
   }
 
   to {
-      transform: rotateX(0deg);
+    transform: rotateX(0deg);
   }
 }
 
@@ -87,15 +92,15 @@
 
 @media (max-width: 620px) {
   .title {
-      font-size: 60px;
+    font-size: 60px;
   }
 
   .main h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .main {
-      width: 80%;
-      min-height: 250px;
+    width: 80%;
+    min-height: 250px;
   }
 }
